@@ -1,0 +1,139 @@
+
+/* Event listing styles */* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("images/2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 25px;
+    color: #333;
+}
+
+/* Page container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #1e3a8a;
+}
+
+/* Horizontal scroll area */
+.events-scroll {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    padding: 10px 5px 20px;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+.events-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.events-scroll::-webkit-scrollbar-thumb {
+    background: #1e40af;
+    border-radius: 10px;
+}
+.events-scroll::-webkit-scrollbar-track {
+    background: #dbeafe;
+}
+
+/* Event card */
+.event-card {
+    min-width: 300px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    flex-shrink: 0;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Event title */
+.event-name {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1d4ed8;
+}
+
+/* Paragraph spacing */
+.event-card p {
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+/* Category badge */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #fff;
+}
+
+.concert { background: #e11d48; }
+.conference { background: #6366f1; }
+.travel { background: #059669; }
+.sports {
+    background: #f59e0b;
+    color: #000;
+}
+
+/* Availability text */
+.availability {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.available {
+    color: #16a34a;
+}
+
+.soldout {
+    color: #dc2626;
+}
+
+/* Button */
+button {
+    margin-top: 14px;
+    width: 100%;
+    padding: 11px;
+    font-size: 14.5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    transform: scale(1.02);
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}

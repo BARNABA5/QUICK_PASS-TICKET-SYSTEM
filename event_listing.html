@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Pass | Event Listing</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎫 Event Listings</h1>
+
+    <!-- Scrollable Events Wrapper -->
+    <div class="events-scroll">
+
+        <div class="event-card">
+            <h2 class="event-name">Quick Pass Music Fest</h2>
+            <p><strong>Date & Time:</strong> 31 Dec 2025, 8:00 PM</p>
+            <p><strong>Venue:</strong> City Grounds, Nairobi</p>
+            <p><strong>Category:</strong> <span class="badge concert">Concert</span></p>
+            <p><strong>Ticket Price:</strong> KES 500 – 2,000</p>
+            <p class="availability available">Tickets Available</p>
+            <button onclick="buyTicket()">Buy Ticket</button>
+        </div>
+
+        <div class="event-card">
+            <h2 class="event-name">Tech Innovators Conference</h2>
+            <p><strong>Date & Time:</strong> 15 Jan 2026, 9:00 AM</p>
+            <p><strong>Venue:</strong> KICC, Nairobi</p>
+            <p><strong>Category:</strong> <span class="badge conference">Conference</span></p>
+            <p><strong>Ticket Price:</strong> KES 1,500 – 5,000</p>
+            <p class="availability available">Tickets Available</p>
+            <button onclick="buyTicket()">Buy Ticket</button>
+        </div>
+
+        <div class="event-card">
+            <h2 class="event-name">Mombasa Beach Trip</h2>
+            <p><strong>Date & Time:</strong> 20 Feb 2026, 6:00 AM</p>
+            <p><strong>Venue:</strong> Diani Beach</p>
+            <p><strong>Category:</strong> <span class="badge travel">Travel</span></p>
+            <p><strong>Ticket Price:</strong> KES 8,000 – 15,000</p>
+            <p class="availability available">Tickets Available</p>
+            <button onclick="buyTicket()">Buy Ticket</button>
+        </div>
+
+        <div class="event-card">
+            <h2 class="event-name">City Marathon</h2>
+            <p><strong>Date & Time:</strong> 10 Mar 2026, 5:30 AM</p>
+            <p><strong>Venue:</strong> Uhuru Park</p>
+            <p><strong>Category:</strong> <span class="badge sports">Sports</span></p>
+            <p><strong>Ticket Price:</strong> KES 1,000</p>
+            <p class="availability soldout">Sold Out</p>
+            <button disabled>Sold Out</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
